@@ -8,7 +8,7 @@
         }).
 
 %% Command line argument
--define(SERVER_IP, "127.0.0.1").
+-define(SERVER_IP, "0.0.0.0").
 -define(SERVER_PORT, 10001).
 -define(CLIENT_NUM, 1).
 

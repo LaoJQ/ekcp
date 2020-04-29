@@ -115,7 +115,6 @@ handle_info(_Msg, State) ->
     {noreply, State}.
 
 terminate(_Reason, State) ->
-    gen_tcp:close(State#state.socket),
     ok.
 
 %%%===================================================================

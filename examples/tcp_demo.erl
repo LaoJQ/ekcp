@@ -51,7 +51,6 @@ start([client | _]) ->
     start_clients(IP, Port, Num).
 
 start_server(Port) ->
-    io:format("port = ~p~n", [Port]),
     case gen_tcp:listen(Port, ?TCP_OPTS) of
         {ok, LSock} ->
             Pid = erlang:spawn(fun() -> listener_loop(LSock) end),
