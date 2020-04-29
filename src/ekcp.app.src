@@ -1,0 +1,12 @@
+{application, ekcp,
+ [{description, "kcp wrap application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {ekcp_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []}
+ ]}.
